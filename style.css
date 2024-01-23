@@ -109,3 +109,55 @@ body.light .toggleClass:before{
 
 
 /* 3d Style Start */
+.house-wrapper{
+    display: flex;
+}
+.house{
+    height: 200vh;
+    zoom: 57%;
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    flex-basis: 20%;
+}
+.single-box{
+    width: 555px;
+    height: 855px;
+    border: 1px solid var(--gray);
+    display: block;
+    position: absolute;
+    transform: rotateY(45deg) translateZ(-400px) rotateX(15deg);
+    transform-origin: 50% 50% 0;
+    background-color: var(--darkgray);
+}
+.front-view{
+    transform: translateZ(275px);
+    background-color:green;
+}
+.side-back{
+    transform: rotateY(180deg) translateZ(275px);    background-color:rgb(51, 0, 128);
+
+}
+.side-right{
+    transform: rotateY(90deg) translateZ(275px);     background-color:rgb(181, 27, 61);
+
+}
+.side-left{
+    transform: rotateY(-90deg) translateZ(275px);     background-color:rgb(31, 215, 228);
+
+}
+.box{
+    transform-style: preserve-3d;
+}
+.cube-wrap{
+    width: 600px;
+    height: 800px;
+    perspective: 2000px;
+    perspective-origin: 50% - 500px;
+}
+.container{
+    perspective: 1500px;
+}
