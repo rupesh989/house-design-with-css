@@ -1,63 +1,111 @@
-
-/* Front View of House Start*/
-.front-view{
-    display: flex;
-    flex-direction: column;
-    background-color: lightgray;
-    box-shadow: 0 0 2px 2px rgb(0, 0, 0);
+/* Base Style Start*/
+:root{
+    --light:rgb(245, 245, 245);
+    --dark: rgb(0, 0, 0);
+    --wheat:rgb(245, 222, 179);
+    --gray: rgb(128, 128, 128);
+    --darkgray: rgb(169, 169, 169);
 }
-.front-view .ground-floor{
-    flex-basis: 34%;
-    display: flex;
-    flex-direction: column;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: sans-serif;
 }
-.front-view .first-floor{
-    flex-basis: 33%;
-    display: flex;
-    flex-direction: column;
+li{
+    list-style: none;
 }
-.front-view .terrace{
-    flex-basis: 33%;
-}
+/* Base Style End */
 
 
-/* Ground-floor Style Start*/
-.header-view{
-    flex-basis: 12%;
-    box-shadow: 0px 3px 3px rgb(83, 83, 83),  0px -3px 3px rgb(83, 83, 83);
+/* Light and Dark Mode Start*/
+body{
+    background: url("assets/night.jpg"), rgb(0, 0, 0);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body.light{
+    background: url("assets/day.jpg"), skyblue;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.toggleClass{
+    position: absolute;
+    top: 2%;
+    right: 15%;
+    border-radius: 50%;
+    background: url("assets/sunnyDay.jfif"), skyblue;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    cursor: pointer;
     display: flex;
-    z-index: 99;
+    align-items: center;
+    box-shadow: 0px 0px 3px 7px gray;
+    transform: scale(1);
+    transition: .5s;
+    animation: animateLight 1.5s linear infinite;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
 }
-.header-view .header-block-left, .header-view .header-block-right{
-   flex: 1;
-   display: flex;
-   gap: 1rem;
-   justify-content: center;
-   align-items: center;
+@keyframes animateDark {
+      0%{
+        box-shadow: 0 0 0 0 rgb(0, 0, 0, 1);
+      }
+      40%{
+          box-shadow: 0 0 0 8px rgb(0, 0, 0, .6);
+      }
+      80%{
+          box-shadow: 0 0 0 14px rgb(0, 0, 0, .3);
+      }
+      100%{
+          box-shadow: 0 0 0 20px rgb(0, 0, 0, 0);
+      }
 }
-.header-view .header-block-right > li,  .header-view .header-block-left > li{
-    height: 80%;
-    width: 12%;
-    margin-top: -.5rem;
-    background-color: var(--light);
-    box-shadow: -2px 3px 3px var(--dark);
-    border-right: .5px solid var(--gray);
-    border-top: .5px solid var(--gray)
- }
-.header-view .header-block-left{
-  margin-left: -3.2rem;
- }
-.ground-floor .main-view{
-    flex-basis: 88%;
-    display: flex;
+@keyframes animateLight {
+    0%{
+        box-shadow: 0 0 0 0 rgb(255, 255, 255, 1);
+      }
+      40%{
+          box-shadow: 0 0 0 8px rgb(255, 255, 255, .6);
+      }
+      80%{
+          box-shadow: 0 0 0 14px rgb(255, 255, 255, .3);
+      }
+      100%{
+          box-shadow: 0 0 0 20px rgb(255, 255, 255, 0);
+      }
 }
-.main-view .left-part{
-    margin-left: auto;
-    flex-basis: 30%;
-    background-color: rgb(5, 5, 5);
-    display: flex;
+.toggleClass:hover{
+    transform: scale(1.05);
 }
-.main-view .right-part{
-    flex-basis: 65%;
-    display: flex;
+.toggleClass::before{
+    position: absolute;
+    content: 'Light Mode';
+    white-space: nowrap;
+    left: 70px;
 }
+body.light .toggleClass{
+    background: url("assets/nightMoon.jfif"), rgb(0, 0, 0);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--dark);
+    animation: animateDark 1.5s linear infinite;
+}
+body.light .toggleClass:before{
+    content: 'Dark Mode';
+}
+/* Light and Dark Mode End*/
+
+
+/* 3d Style Start */
