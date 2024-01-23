@@ -1,5 +1,63 @@
 
-*{
-    margin: 0px;
-    padding: 0px;
+/* Front View of House Start*/
+.front-view{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    box-shadow: 0 0 2px 2px rgb(0, 0, 0);
+}
+.front-view .ground-floor{
+    flex-basis: 34%;
+    display: flex;
+    flex-direction: column;
+}
+.front-view .first-floor{
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+}
+.front-view .terrace{
+    flex-basis: 33%;
+}
+
+
+/* Ground-floor Style Start*/
+.header-view{
+    flex-basis: 12%;
+    box-shadow: 0px 3px 3px rgb(83, 83, 83),  0px -3px 3px rgb(83, 83, 83);
+    display: flex;
+    z-index: 99;
+}
+.header-view .header-block-left, .header-view .header-block-right{
+   flex: 1;
+   display: flex;
+   gap: 1rem;
+   justify-content: center;
+   align-items: center;
+}
+.header-view .header-block-right > li,  .header-view .header-block-left > li{
+    height: 80%;
+    width: 12%;
+    margin-top: -.5rem;
+    background-color: var(--light);
+    box-shadow: -2px 3px 3px var(--dark);
+    border-right: .5px solid var(--gray);
+    border-top: .5px solid var(--gray)
+ }
+.header-view .header-block-left{
+  margin-left: -3.2rem;
+ }
+.ground-floor .main-view{
+    flex-basis: 88%;
+    display: flex;
+}
+.main-view .left-part{
+    margin-left: auto;
+    flex-basis: 30%;
+    background-color: rgb(5, 5, 5);
+    display: flex;
+}
+.main-view .right-part{
+    flex-basis: 65%;
+    display: flex;
 }
