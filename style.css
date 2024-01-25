@@ -550,3 +550,65 @@ a:active {
   position: relative;
   box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.8);
 }
+
+.ground-floor .inside-door .rectangle {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-content: center;
+  justify-content: center;
+}
+.ground-floor .inside-door .rectangle > li {
+  display: inline-block;
+  width: 30%;
+  height: 40%;
+  border: 2px solid rgb(218, 154, 36);
+  box-shadow: inset 0px 0px 1px 2px rgba(0, 0, 0, 0.8);
+}
+.ground-floor .inside-door .square {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-content: center;
+  justify-content: center;
+}
+.ground-floor .inside-door .square > li {
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+  border: 2px solid rgb(218, 154, 36);
+  display: grid;
+  place-items: center;
+  box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.8);
+}
+.ground-floor .inside-door .square > li div {
+  width: 65%;
+  height: 65%;
+  border: 2px solid rgb(218, 154, 36);
+  border-radius: 50%;
+}
+.ground-floor .inside-door .lockBar {
+  position: absolute;
+  width: 25%;
+  height: 10%;
+  top: 53%;
+  left: 72%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ground-floor .inside-door .lockBar li:first-child {
+  width: 100%;
+  background-color: silver;
+  height: 0.1rem;
+}
+.ground-floor .inside-door .lockBar li:last-child {
+  width: 30%;
+  background-color: silver;
+  height: 1.1rem;
+  border-radius: 2px;
+}
