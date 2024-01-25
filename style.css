@@ -297,3 +297,70 @@ a:active {
   flex-basis: 65%;
   display: flex;
 }
+
+/* ground-floor left-part style */
+.main-view .gate {
+  position: absolute;
+  display: flex;
+  width: 95%;
+  height: 55%;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.main-view .left-part {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: var(--darkgray);
+  opacity: 1;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.8);
+}
+.main-view .left-part::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--dark);
+  opacity: 0.3;
+  z-index: 1;
+}
+.left-part .inside-window {
+  margin-top: 1rem;
+  width: 6rem;
+  height: 4rem;
+}
+.left-part .inside-door {
+  width: 10rem;
+  height: 20rem;
+  background-color: rgb(128, 33, 33);
+}
+.gate .left,
+.gate .right {
+  flex-basis: 50%;
+  height: 100%;
+  border: 5px solid var(--wheat);
+  transition: transform 2s ease;
+}
+.gate .left {
+  transform-origin: left center;
+}
+.gate .right {
+  transform-origin: right center;
+}
+.open-door-r {
+  transform-origin: right center;
+  transform: perspective(400px) rotateY(-70deg);
+}
+.open-door-l {
+  transform-origin: left center;
+  transform: perspective(400px) rotateY(70deg);
+}
