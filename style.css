@@ -844,3 +844,69 @@ a:active {
 .large-window .right-large-window {
   transform-origin: right center;
 }
+
+.slide-wrapper .left-slide,
+.slide-wrapper .right-slide1 {
+  background-color: rgb(31, 25, 25, 0.7);
+  width: 50%;
+  height: 100%;
+  border: 5px solid var(--dark);
+  transition: transform 2s ease;
+}
+.first-floor .main-view .left-part {
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.first-floor .left-part .inside-window {
+  margin-top: auto;
+  flex-basis: 18%;
+}
+.first-floor .left-part .inside-window .horizontal > li:last-child {
+  height: 1px;
+}
+.first-floor .left-part .inside-door {
+  width: 10rem;
+  flex-basis: 68%;
+  flex-direction: row;
+  background-color: rgb(82, 42, 14);
+}
+.inside-door .circle {
+  flex-basis: 50%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+.inside-door .circle > div {
+  flex-basis: 27%;
+  width: 60%;
+  border-radius: 50%;
+  background-color: silver;
+}
+.inside-door .verticalLines {
+  flex-basis: 50%;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+.inside-door .verticalLines > li {
+  height: 90%;
+  margin-top: auto;
+  width: 0.5rem;
+  background-color: silver;
+}
+.first-floor .inside-door .lockBar {
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  top: 55%;
+  left: 83%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
