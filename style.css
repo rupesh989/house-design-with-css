@@ -1246,3 +1246,45 @@ a:active {
     zoom: 50%;
   }
 }
+
+@media screen and (max-width: 460px) {
+  .house {
+    zoom: 40%;
+  }
+  .toggleClass {
+    right: 9%;
+  }
+  body {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 390px) {
+  .house {
+    zoom: 36%;
+    flex-basis: 95%;
+  }
+  .menu {
+    flex-basis: 5%;
+  }
+  .toggleClass {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    right: 10%;
+  }
+  .toggleClass::before {
+    left: -100%;
+  }
+  a {
+    width: 70px;
+    height: 20px;
+    font-size: 8px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .house {
+    zoom: 33%;
+  }
+}
+/* Mobile Responsive Style End */
