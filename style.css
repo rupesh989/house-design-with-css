@@ -1053,3 +1053,75 @@ a:active {
   top: 65%;
   z-index: 2;
 }
+
+.terrace .left-part .gallary-wrapper > li:first-child {
+  height: 4px;
+  margin-top: 2px;
+}
+.terrace .slider-part .slide-wrapper {
+  flex-basis: 60%;
+  margin-top: 0.5rem;
+}
+.terrace .slider-part .threeBars {
+  flex-basis: 40%;
+  width: 28%;
+}
+.terrace .slide-wrapper .strips {
+  gap: 6px;
+}
+.terrace .right-part .window-part .threeBars {
+  margin-top: 1rem;
+  flex-basis: 35%;
+}
+.terrace .right-part .window-part .large-window {
+  flex-basis: 50%;
+}
+.terrace .slide-wrapper .left-slide,
+.slide-wrapper .right-slide2 {
+  background-color: rgb(31, 25, 25, 0.7);
+  width: 50%;
+  height: 100%;
+  border: 5px solid var(--dark);
+  transition: transform 2s ease;
+}
+.large-window .left-large-window1,
+.large-window .right-large-window1 {
+  width: 50%;
+  height: 100%;
+  border: 5px solid var(--wheat);
+  outline: 2px solid balck;
+  transition: transform 2s ease;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.large-window .left-large-window1 {
+  transform-origin: left center;
+}
+.large-window .right-large-window1 {
+  transform-origin: right center;
+}
+.terrace .header-view {
+  position: relative;
+}
+.terrace .header-view .middle-design {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 2%;
+  left: 42%;
+  display: flex;
+  gap: 0.5rem;
+}
+.terrace .header-view .middle-design > li {
+  height: 95%;
+  width: 1.1rem;
+  margin: 0.4rem;
+  background-color: var(--light);
+  box-shadow: -2px 3px 3px var(--dark);
+  border-right: 0.5px solid var(--gray);
+  border-top: 0.5px solid var(--gray);
+}
+.terrace .top-part {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
