@@ -1178,3 +1178,71 @@ a:active {
   height: 6px;
 }
 /* Terrace-Part Style End */
+
+/* Front View of House End*/
+
+/* Mobile Responsive Style Start */
+@media screen and (max-width: 1250px) {
+  .toggleClass {
+    right: 18%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  a {
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .toggleClass {
+    right: 22%;
+  }
+  .menu {
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .toggleClass {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .toggleClass::before {
+    left: 60px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .toggleClass {
+    width: 35px;
+    height: 35px;
+    font-size: 17px;
+    right: 8%;
+  }
+  .toggleClass::before {
+    left: 53px;
+    top: 160%;
+    left: -110%;
+  }
+  .house {
+    height: 200vh;
+    zoom: 60%;
+    flex-basis: 90%;
+  }
+  .menu {
+    flex-basis: 10%;
+  }
+  a {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .house {
+    zoom: 50%;
+  }
+}
