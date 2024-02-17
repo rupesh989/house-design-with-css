@@ -133,15 +133,15 @@ body.light .toggleClass:before {
 }
 .front-view {
   transform: translateZ(275px);
-  background-color: green;
+background-color: rgb(31, 215, 228);
 }
 .side-back {
   transform: rotateY(180deg) translateZ(275px);
-  background-color: rgb(51, 0, 128);
+  background-color: rgb(31, 215, 228);
 }
 .side-right {
   transform: rotateY(90deg) translateZ(275px);
-  background-color: rgb(181, 27, 61);
+ background-color: rgb(31, 215, 228);
 }
 .side-left {
   transform: rotateY(-90deg) translateZ(275px);
